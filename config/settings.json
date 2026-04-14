@@ -1,0 +1,22 @@
+{
+  "workflow": {
+    "name": "Email Auto-Responder",
+    "description": "Classifie un email et génère une réponse automatique",
+    "version": "1.0"
+  },
+  "ai": {
+    "model": "claude-sonnet-4-6",
+    "max_tokens": 1024,
+    "temperature": 0.3
+  },
+  "categories": [
+    "information",
+    "plainte",
+    "commande",
+    "autre"
+  ],
+  "retry": {
+    "max_attempts": 3,
+    "delay_seconds": 1
+  }
+}
